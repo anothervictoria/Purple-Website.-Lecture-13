@@ -1,0 +1,119 @@
+/* 
+COLORS
+DARK GREY =  #212529 background
+WHITE: #F2F4FF menu text color
+GREEN: #00ff40 join button
+BLACK: #111112; button dark text color
+GREY: #ccd4ff1c; outline for button
+
+
+*/
+
+:root {
+  --indigo: #6610f2;
+  --blue: #0d6efd;
+  --purple: #6f42c1;
+  --pink: #d63384;
+  --red: #dc3545;
+  --ge: #fd7e14;
+  --yellow: #ffc107;
+  --green: #198754;
+  --salad-green: #00ff40;
+  --teal: #20c997;
+  --cyan: #0dcaf0;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #0d6efd;
+  --secondary: #6c757d;
+  --success: #198754;
+  --info: #0dcaf0;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --white: #f2f4ff;
+  --dark: #212529;
+  --black: #111112;
+  --outline-grey: #ccd4ff1c;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "SpaceGrotesk", sans-serif;
+  background-color: #212529;
+}
+
+button {
+  background: none;
+  border: none;
+  color: var(--white);
+  cursor: pointer;
+  outline: none; /* Remove the default focus outline */
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2rem;
+  border-radius: 1.6rem;
+  padding: 1.4rem 2.4rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+
+.button:hover {
+  background-color: var(--outline-grey);
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.4rem 0;
+}
+
+.nav-menu {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+li:first-child {
+  background-color: var(--outline-grey);
+  border-radius: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.sign-in-btn {
+  border: 2px solid #ccd4ff1c;
+}
+
+.join-btn {
+  background-color: var(--salad-green);
+  color: var(--black);
+  padding: 16px 24px;
+  margin-left: 0.4rem;
+  transition: all 0.15s ease-in-out;
+}
+
+.join-btn:hover {
+  background-color: var(--salad-green);
+  box-shadow: -1px 1px 15px var(--salad-green);
+}
