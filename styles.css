@@ -261,7 +261,7 @@ a {
   gap: 9.6rem;
   margin: auto;
   margin-bottom: 9.6rem;
-  width: 80%;
+  width: 100%;
 }
 
 .cta-card {
@@ -344,4 +344,39 @@ a {
 .feature-title-text {
   color: rgba(230, 234, 255, 0.45);
   margin-bottom: 3.2rem;
+}
+
+/* __________ logos _____________*/
+
+.logos {
+  display: flex;
+  overflow: hidden;
+  padding: 6rem 0;
+  margin-bottom: 9.6rem;
+  white-space: nowrap;
+  gap: 2.4rem;
+}
+
+.logos-slide {
+  display: flex;
+  gap: 2.4rem;
+  animation: 25s logo-slide infinite linear;
+}
+.logos-slide img {
+  height: 5rem;
+}
+
+.logo {
+  background-color: hsla(230, 100%, 90%, 0.05);
+  border-radius: 2.4rem;
+  padding: 2.4rem;
+}
+
+@keyframes logo-slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
