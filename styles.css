@@ -59,12 +59,13 @@ li {
 
 body {
   font-family: "SpaceGrotesk", sans-serif;
-  background-color: #212529;
+  background-color: var(--black);
 }
 
 main {
   display: flex;
   flex-direction: column;
+  padding-bottom: 9.6rem;
 }
 
 ul {
@@ -147,6 +148,10 @@ button {
   justify-content: start;
   align-items: start;
   margin-bottom: 9.6rem;
+
+  box-shadow: 50px -10px 16rem #350d757b, -50px 10px 16rem #350d757b;
+
+  /* box-shadow: -1px 1px 184rem var(--salad-green); */
 
   /* position: relative;
   width: 100%;
@@ -364,6 +369,7 @@ button {
 .feature-title {
   font-size: 2.4rem;
   line-height: 2.4rem;
+  color: white;
 }
 
 .feature-title-text {
