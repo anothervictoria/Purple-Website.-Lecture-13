@@ -50,7 +50,9 @@ html {
 h1,
 h2,
 h3,
-body {
+body,
+ul,
+li {
   padding: 0;
   margin: 0;
 }
@@ -63,6 +65,15 @@ body {
 main {
   display: flex;
   flex-direction: column;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
 }
 
 /* nav section */
@@ -99,7 +110,6 @@ button {
 }
 
 .nav-menu {
-  list-style-type: none;
   display: flex;
   align-items: center;
   gap: 0.4rem;
@@ -108,11 +118,6 @@ button {
 .nav-menu li:first-child {
   background-color: var(--outline-grey);
   border-radius: 1.6rem;
-}
-
-a {
-  text-decoration: none;
-  color: var(--white);
 }
 
 .sign-in-btn {
@@ -253,8 +258,7 @@ a {
   width: 50vw;
   margin: auto;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: start;
   margin-bottom: 9.6rem;
 }
 
@@ -490,6 +494,40 @@ a {
 .footer-section {
   background-color: rgba(204, 212, 255, 0.05);
   border-radius: 2.4rem;
-  padding: 6.4rem 8rem 8rem 8rem;
+  padding: 4.8rem 8rem 8rem 8rem;
   margin-bottom: 9.6rem;
+}
+
+.footer-img-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4.8rem;
+}
+
+.footer-logo-text {
+  font-weight: 400;
+  font-size: 1.8rem;
+  /* align-items: right; */
+  color: rgba(229, 234, 255, 0.6);
+}
+
+.footer-items-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-items a,
+li {
+  margin: 0;
+  padding: 0;
+  font-size: 1.8rem;
+  line-height: 4.8rem;
+  color: rgba(230, 234, 255, 0.6);
+}
+
+.footer-icons-div {
+  margin-top: 1.6rem;
+  display: flex;
+  gap: 1rem;
+  align-items: start;
 }
