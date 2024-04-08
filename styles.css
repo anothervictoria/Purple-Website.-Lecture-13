@@ -148,6 +148,7 @@ button {
   justify-content: start;
   align-items: start;
   margin-bottom: 9.6rem;
+  border-radius: 2.4rem;
 
   box-shadow: 50px -10px 16rem #350d757b, -50px 10px 16rem #350d757b;
 
@@ -167,7 +168,6 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 2.4rem;
 }
 
 /* .hero-section::before {
@@ -541,4 +541,221 @@ li {
   display: flex;
   gap: 1rem;
   align-items: start;
+}
+
+/* _______ media-querries___________________*/
+
+@media (max-width: 75em) {
+  /* BELOW 1200px  */
+  html {
+    /* 9px / 16px  */
+    font-size: 56.25%;
+  }
+
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+
+  button {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    border-radius: 1.4rem;
+    padding: 1.2rem 2rem;
+  }
+
+  .join-btn {
+    padding: 1.2rem 1.6rem;
+  }
+
+  .navbar {
+    padding: 3.2rem 0;
+  }
+
+  .cross-section-text {
+    width: 50vw;
+    margin: auto;
+    display: flex;
+    justify-content: start;
+    margin-bottom: 4.8rem;
+  }
+
+  .text {
+    color: hsla(228, 100%, 95%, 0.6);
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 4.8rem;
+    text-align: center;
+  }
+
+  .hero-section {
+    width: 80vw;
+    height: 70vh;
+    margin: 2.4rem 2.4rem 3.2rem 2.4rem;
+  }
+
+  .hero-title {
+    font-size: 3.6rem;
+    line-height: 4.8rem;
+    font-weight: 500;
+    margin-bottom: 1.8rem;
+  }
+
+  .hero-btn {
+    margin: 0 !important;
+    padding: 1.2rem 1.6rem;
+  }
+
+  /* Scroller styling */
+  .scrolling-textbox {
+    margin-bottom: 3.6rem;
+
+    /* display: flex; */
+  }
+
+  .inner-hero-section {
+    margin: 6.4rem;
+    width: 64rem;
+  }
+
+  .scrolling-text {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    font-weight: 400;
+    color: rgba(229, 234, 255, 0.7);
+  }
+
+  .cta-cards-container {
+    margin-bottom: 6.4rem;
+  }
+
+  .cta-card {
+    font-size: 1.6rem;
+    padding: 3.6rem;
+    border-radius: 2.4rem;
+  }
+
+  .features-list-box {
+    margin-bottom: 3.6rem;
+  }
+
+  .card-title {
+    font-size: 3.6rem;
+  }
+
+  .cta-image {
+    width: 12rem;
+  }
+
+  .cta-icon-image {
+    width: 6rem;
+  }
+
+  .card-header-text {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .feature-title {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+
+  .feature-title-text {
+    margin-bottom: 2.4rem;
+    line-height: 1.8;
+  }
+
+  .logos {
+    margin-bottom: 6.4rem;
+  }
+
+  .testimonial-section {
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    margin-bottom: 6.4rem;
+  }
+
+  .testimonial-text {
+    font-size: 3.6rem;
+    line-height: 4.8rem;
+  }
+
+  .footer-section {
+    padding: 3.6rem 6.4rem 6.4rem 6.4rem;
+    margin-bottom: 6.4rem;
+  }
+
+  .footer-img-container {
+    margin-bottom: 3.6rem;
+  }
+
+  .footer-items a,
+  li {
+    font-size: 1.5rem;
+    line-height: 3.6rem;
+  }
+}
+
+@media (max-width: 59em) {
+  /* BELOW 944px */
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+
+  button {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    border-radius: 1.2rem;
+    padding: 0.8rem 1.2rem;
+  }
+
+  .cta-cards-container {
+    flex-direction: column;
+    gap: 4.8rem;
+    margin: auto;
+    margin-bottom: 4.8rem;
+  }
+
+  .text {
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+  }
+
+  .cta-card {
+    font-size: 1.6rem;
+
+    border-radius: 2.4rem;
+    padding: 3.6rem 3.6rem 4.8rem 4.8rem;
+  }
+}
+
+@media (max-width: 44em) {
+  /* BELOW 704px */
+
+  /* button p {
+    margin: 0;
+  } */
+  button {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    border-radius: 1.4rem;
+    padding: 0.8rem 1.2rem;
+    white-space: nowrap;
+  }
+
+  .text {
+    font-size: 2.4rem;
+  }
+
+  .testimonial-text {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+  }
+}
+
+@media (max-width: 34em) {
+  /* BELOW 544px (Phones) */
 }
